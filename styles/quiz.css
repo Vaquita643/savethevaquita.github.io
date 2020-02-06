@@ -1,0 +1,32 @@
+.quiz-container {
+    display: flex;
+    justify-content: center;
+}
+
+.quiz-container>div {
+    display: none; /* The JavaScript will unhide the quiz sections as required */
+    width: 100%;
+    text-align: center;
+}
+
+.answer {
+    margin: 0 1em 0 0;
+}
+
+@media screen and (max-width: 991px) {
+    #answers {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .answer {
+        display: block !important;
+        margin: 0 0 1em 0;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .quiz-container {
+        margin: 5em auto;
+    }
+}

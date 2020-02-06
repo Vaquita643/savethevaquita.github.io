@@ -1,0 +1,116 @@
+/* SaveTheVaquita.com stylesheet */
+.container {
+    padding-top: 1em;
+}
+
+@media screen and (min-width: 1500px) {
+    .container {
+        max-width: 1400px;
+    }
+}
+
+/* Hide the mobile donation button until it is enabled by media queries */
+.donate-mobile-container {
+    display: none;      
+    font-size: 0.9em;
+}      
+
+.navbar-logo {
+    margin: 0 6px;      
+}      
+
+.donate-container {
+    padding: 10px;
+    display: block;
+    background-color: rgba(0.1, 0.1, 0.1, 0.24);
+}
+
+.nav-item:not(:first-child) {
+    border-width: 0 0px 0 1px;
+    border-color: black;
+    border-style: solid;
+}
+
+h1 {
+    padding: 0px 1em;
+    font-size: 1.75rem;
+}
+
+/* Mobile Navigation */
+@media screen and (max-width: 991px) {
+    .nav-item {
+        border-width: 0 !important;
+    }
+    
+    .donate-mobile-container {
+        display: block;
+        position: fixed !important;
+        width: 100vw;
+        bottom: 0px;
+        padding: 5px;
+        background-color: rgba(0.1, 0.1, 0.1, 0.64);
+        z-index: 100;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    
+    .donate-mobile-container>a {
+        color: #FFFFFF;
+        text-decoration: underline;
+    }
+    
+    .donate-mobile-container>a:visited {
+        color: #FFFFFF;
+    }
+    
+    .donate-container {
+        display: none;
+    }
+    
+    #hide-mobile-donation {
+        position: absolute;
+        right: 10px;
+        
+        margin: 0;
+        padding: 0;
+        -webkit-appearance: none;
+        background-color: unset;
+        border-color: unset;
+        border-radius: 0;
+        border-width: 0;
+        color: #FFFFFF;
+    }
+    
+    #hide-mobile-donation:hover, #hide-mobile-donation:active {
+        background-color: unset;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    footer>p {
+        margin: 0;
+    }
+}
+
+
+.donate-container a {
+    background-color: #28a745;
+    border-color: #28a745;
+    color: #FFFFFF;
+}
+
+#more {display: none;}
+
+.navbar-brand>img {
+    width: 64px;
+} 
+
+footer {
+    margin-top: 2.5em;    
+}
+
+footer>p {
+    margin: 0 1em;
+}

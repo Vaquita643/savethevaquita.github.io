@@ -1,0 +1,44 @@
+#other-animals {
+    display: flex;
+
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+#other-animals>div {
+    margin: 10px;
+    flex-shrink: 0;
+    width: 20rem !important;
+}
+
+#other-animals>div>img {
+    height: 200px;
+}
+
+#vaquita-information {
+    margin: 1em;
+}
+
+/* Mobile */
+@media screen and (max-width: 991px) {
+    /* Change other animals display away from a scroll bar to a tiled view */
+    #other-animals {
+        overflow-y: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    /* Remove the padding from the container */
+    .container {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+    /* Then apply to all children but the jumbo */
+    .container>*:not(#jumbo) {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
