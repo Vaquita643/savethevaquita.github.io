@@ -32,3 +32,19 @@
         margin-bottom: 0;
     }   
 }
+
+.date {
+    font-weight: bold;
+    font-size: large;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 150%;
+}
+
+.article-title{
+    font-size: large;
+    font-weight: 500;
+}
+

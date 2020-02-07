@@ -1,19 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <title>The Plight of the Vaquita</title>
     <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <meta name="description"
-            content="Vaquitas are a critically endangered species that need your help. Help us stop the plight of the Vaquita and prevent the same happening to other marine animals">
+    <meta name="description"
+    content="Vaquitas are a critically endangered species that need your help. Help us stop the plight of the Vaquita and prevent the same happening to other marine animals">
 
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link rel="stylesheet" href="styles/global.css" type="text/css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/global.css" type="text/css">
+    <link rel="stylesheet" href="styles/plight.css" type="text/css">
 </head>
 
 <body>
-
+    <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light">
         <!-- Branding -->
         <a class="navbar-brand" href="/index.html"><img class="navbar-logo" src="assets/logo.png">SaveTheVaquita</a>
@@ -53,14 +55,78 @@
         </div>
     </nav>
 
+    <!-- Donate -->
     <div id="mobile-donation" class="donate-mobile-container">
         Click <a class="donate-mobile" href="http://www.vivavaquita.org/donate-to-the-vaquita-recovery-fund.html">here</a> to donate to support oceanic wildlife
         <button id="hide-mobile-donation">X</button>
     </div>
 
-    <hr>
-    <h1>The Plight of the Vaquita</h1>
-    <hr>
+    <!-- Content -->
+    <section class="container">
+        <div class="row">
+            <hr>
+            <div class="col-sm-12">
+                <h1>The Plight of the Vaquita</h1>
+                <hr>
+            </div>
+            <!-- <div>
+                <p class="col-sm-12">
+                    A brief intro?
+                </p>
+                <hr>
+            </div> -->
+        </div>
+    </section>
+
+
+    <section class="container">
+        <h4>The cause of the Issue</h4>
+        <article class="row">
+            <p class="col-sm-8">
+                Whist the Vaquita have never been hunted directly, they are often caught. Illegal fishing using gillnets, in the aim of catching the critically endangered Totoaba fish, which is a similar size to the Vaquita. These nets frequently catch Vaquita, which is the primary reason for the sudden loss of population. Today, there are only 10 to 20 Vaquitas in existence.
+            </p>
+            <div class="col-sm-4">
+                <figure>
+                    <img src="assets/Fish_and_Wildlife_Service_worker_on_boat_checking_gill_net_full_of_fish.jpg" alt="A worker checking gillnets">
+                    <figcaption>A worker checking gillnets</figcaption>
+                </figure>
+            </div>
+        </article>
+
+        <hr>
+
+        <h4>The situation</h4>
+        <article class="row">
+            <p class="col-sm-12">
+                In 2015, a conservation program for both the Vaquita and the Totoaba was announced. This included a 2-year ban on gillnet fishing in the region, which included enforcement the Navy and support for fishermen that would be impacted by the changes.
+                <br>
+                Even with these changes, the population was believed to have declined to around 30 by November 2016, with at least 3 Vaquitas still being caught in nets. This instigated a captive breeding program, in the hope that the population could be increased before release.
+                <br>
+                In 2017, the gillnet ban was made permanent, with the USA also banning the importation of gillnet-harvested seafood from the Gulf of California later the same year.
+                <br>
+                By 2018, only 15-20 were predicted to remain, with sightings of 6 or 7. However, the sightings of multiple calves across the region led to increased optimism of possible conservation.
+                <br>
+                Last year a Vaquita was found caught in gillnets, indicating that they still pose a danger, even with a very low population. Studies now predict around 10-20 Vaquitas remain.
+            </p>
+        </article>
+
+        <hr>
+
+        <h4>What can be done</h4>
+        <article class="row">
+            <div class="col-sm-4">
+                <figure>
+                    <img src="assets/2vaquitaSwimming.jpg" alt="Two Vaquita swimming">
+                    <figcaption>Two Vaquita Swimming in the Gulf of California</figcaption>
+                </figure>
+            </div>
+            <p class="col-sm-8">
+                Whilst the future for Vaquitas is not looking bright, there is still hope; as multiple calves have been sighted across the Vaquitas habitat. You can aid conservation efforts for the Vaquitas by donating to VIVA Vaquita Recovery Fund (using the donate button!).
+
+                However, other whilst Vaquitas are critically endangered, many other species are in a similar situation, but still without any conservation efforts for those species. These include animals like Blue Whales, Hawksbill Turtles and Sea Otters. All of which need help!
+            </p>
+        </article>
+    </section>
 
     <footer>
         <hr>
@@ -68,7 +134,10 @@
         <hr>
     </footer>
 
-
+    <!-- The timeline Script -->
+    <script src="assets/timelineVertical.js"></script>
+    <script src="simpletimeline-min.js"></script>
+    <!-- Importing Stuffs-->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
